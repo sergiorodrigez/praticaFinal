@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cambio de Divisas - Iniciar sesión</title>
+	<title>Cambio de Divisas - Registrarse</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="login.css">
@@ -18,13 +18,17 @@
 	</header>
 	<main>
 		<section>
-			<h2>Iniciar sesión</h2>
+			<h2>Registrarse</h2>
 			<form>
+				<label for="name">Nombre completo:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="birthdate">Fecha de nacimiento:</label>
+				<input type="date" id="birthdate" name="birthdate" required>
 				<label for="email">Correo electrónico:</label>
 				<input type="email" id="email" name="email" required>
-				<label for="password">Contraseña:</label>
-				<input type="password" id="password" name="password" required>
-				<input type="submit" value="Iniciar sesión">
+				<label for="phone">Número de teléfono:</label>
+				<input type="tel" id="phone" name="phone" required>
+				<input type="submit" value="Registrarse">
 			</form>
 		</section>
 	</main>
