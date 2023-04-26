@@ -1,0 +1,62 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+
+    <!-- Pliki .css -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    <!-- Pliki .js -->
+    <script defer src="script2.js"></script>
+
+    <!-- Fonty -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header-h1">Currency Converter</h1>
+        <form class="form js-form" action="" method="GET">
+            <section class="form__section">
+                <p class="paragraph paragraph-currencyFrom">
+                    <span class="js-currencyTextFrom"></span>
+                    <span class="js-currencyNameFromText"></span>
+                </p>
+                <p class="paragraph paragraph-currencyTo">
+                    <strong class="js-currencyTextTo"></strong>
+                    <strong class="js-currencyNameToText"></strong>
+                </p>
+            </section>
+
+            <section class="form__section form__section-fields">
+                <fieldset class="form__fieldset form__fieldset-1">
+                    <label class="form__label">
+                        <input class="form__textField js-currencyFrom" name="ammount-from" placeholder="Enter the ammount" required>
+                    </label>
+                    <label class="form__label">
+                        <select class="form__select form__select-from js-selectFrom" required>
+                            <option class="form__option form__option-placeholder" disabled selected>Select currency</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset class="form__fieldset form__fieldset-2">
+                    <label class="form__label">
+                        <input class="form__textField js-currencyTo" name="ammount-to" placeholder="Enter the ammount" required>
+                    </label>
+                    <label class="form__label">
+                        <select class="form__select form__select-from js-selectTo" required>
+                            <option class="form__option form__option-placeholder" disabled selected>Select currency</option>
+                        </select>
+                    </label>
+                </fieldset>
+            </section>
+
+            <section class="form__section form__section-buttons">
+                <button class="form__button form__button-reset js-reset" type="reset">Reset</button>
+            </section>
+        </form>
+    </div>
+</body>

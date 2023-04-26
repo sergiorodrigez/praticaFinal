@@ -1,0 +1,149 @@
+/* Box Model. */
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+    font-family: "Lato", sans-serif;
+}
+
+
+
+/* Styling */
+
+.container {
+    max-width: 640px;
+    margin: 8% auto;
+}
+
+.header-h1 {
+    font-size: 40px;
+}
+
+.paragraph {
+    margin-left: 12px;
+}
+
+.paragraph-currencyTo {
+    font-size: 24px;
+
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+
+.paragraph-currencyFrom {
+    margin-bottom: 12px;
+}
+
+.paragraph-pln {
+    display: inline;
+}
+
+.form__textField, .form__select {
+
+    min-width: 264px;
+
+    padding: 12px;
+
+    margin-right: 12px;
+    margin-bottom: 16px;
+
+    border-radius: 4px;
+
+    font-size: 16px;
+}
+
+.form__section, .header-h1 {
+    margin: 0 24px;
+}
+
+.form__section-fie {
+    margin-top: 24px;
+}
+
+
+
+/* Select */
+
+.form__select {
+    height: 47px;
+
+    border: 2px solid #777777;
+}
+
+.form__select:hover {
+    background-color: #20212410;
+}
+
+.form__select:focus {
+    border: 2px solid #202124;
+    outline: none;
+
+    background-color: #20212410;
+}
+
+
+
+/* Text Fields */
+
+.form__fieldset {
+    padding: 0;
+    max-width: inherit;
+    border: 0px;
+}
+
+.form__textField {
+    border: 2px solid #777777;
+}
+
+.form__textField:hover {
+    background-color: #20212410;
+}
+
+.form__textField:focus {
+    border: 2px solid #202124;
+    outline: none;
+
+    background-color: #20212410;
+}
+
+
+
+/* Buttons */
+
+.form__section-buttons {
+    margin-top: 16px;
+}
+
+.form__button {
+
+    max-width: 50%;
+
+    padding: 12px 24px;
+
+    margin-right: 12px;
+
+    border: 2px solid #202124;
+    border-radius: 4px;
+    background-color: inherit;
+
+    color: #202124;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form__button:hover {
+    background-color: #20212420;
+}
+
+.form__button:focus {
+    background-color: #20212420;
+}
+
+.form__button:active {
+    background-color: #20212440;
+}
+
+
